@@ -1,25 +1,30 @@
 <?php
 
-namespace CodeDelivery\Models;
+namespace Codedelivery\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Prettus\Repository\Contracts\Transformable;
+use Prettus\Repository\Traits\TransformableTrait;
 
-class Order extends Model
+class Order extends Model implements Transformable
 {
+    use TransformableTrait;
+
     protected $fillable = [
-    	'cliente_id',
-    	'user_deliveryman_id',
-    	'total',
-    	'status'
+        'cliente_id',
+        'user_deliveryman_id',
+        'total',
+        'status'
     ];
 
     public function items()
     {
-    	return $this->hasMany(OrderItems::class);
+        return $this->hasMany(OrderItems::class);
     }
 
     public function deliveryman()
-    {	
-    	return $this->belongsTo(User::class);
+    {   
+        return $this->belongsTo(User::class);
     }
+
 }

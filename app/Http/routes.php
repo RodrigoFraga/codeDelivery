@@ -26,6 +26,4 @@ Route::get('/', function () {
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
-});
+Route::get('admin/categorias', 'CategoriasController@index');

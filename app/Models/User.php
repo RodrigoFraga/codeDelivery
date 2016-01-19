@@ -1,11 +1,16 @@
 <?php
 
-namespace CodeDelivery\Models;
+namespace Codedelivery\Models;
 
+use Illuminate\Database\Eloquent\Model;
+use Prettus\Repository\Contracts\Transformable;
+use Prettus\Repository\Traits\TransformableTrait;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class User extends Model, implements Transformable
 {
+    use TransformableTrait, Authenticatable;
+
     /**
      * The attributes that are mass assignable.
      *
