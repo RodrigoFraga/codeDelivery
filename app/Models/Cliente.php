@@ -1,6 +1,6 @@
 <?php
 
-namespace Codedelivery\Models;
+namespace CodeDelivery\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Prettus\Repository\Contracts\Transformable;
@@ -23,5 +23,4 @@ class Cliente extends Model implements Transformable
     {
         return $this->hasOne(User::class);
     }
-
 }

@@ -219,7 +219,7 @@ return [
     */
     'generator'=>[
         'basePath'=>app_path(),
-        'rootNamespace'=>'Codedelivery\\',
+        'rootNamespace'=>'CodeDelivery\\',
         'paths'=>[
             'models'=>'Models',
             'repositories'=>'Repositories',

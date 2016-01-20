@@ -1,15 +1,15 @@
 <?php
 
-namespace Codedelivery\Repositories;
+namespace CodeDelivery\Repositories;
 
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
-use Codedelivery\Repositories\ProdutoRepository;
-use Codedelivery\Models\Produto;
+use CodeDelivery\Repositories\ProdutoRepository;
+use CodeDelivery\Models\Produto;
 
 /**
  * Class ProdutoRepositoryEloquent
- * @package namespace Codedelivery\Repositories;
+ * @package namespace CodeDelivery\Repositories;
  */
 class ProdutoRepositoryEloquent extends BaseRepository implements ProdutoRepository
 {
