@@ -11,7 +11,7 @@
 			<thead>
 				<tr>
 					<th>ID</th>
-					{{-- <th>Cliente</th> --}}
+					<th>Cliente</th>
 					<th>Telefone</th>
 					<th>Endereco</th>
 					<th>Cidade</th>
@@ -24,7 +24,7 @@
 				@foreach($clientes as $cliente)
 				<tr>
 					<td> {{ $cliente->id }} </td>
-					{{-- <td> {{ $cliente->user->nome }} </td> --}}
+					<td> {{ $cliente->user->name }} </td>
 					<td> {{ $cliente->telefone }} </td>
 					<td> {{ $cliente->endereco }} </td>
 					<td> {{ $cliente->cidade }} </td>

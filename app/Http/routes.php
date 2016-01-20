@@ -48,4 +48,8 @@ Route::group(['prefix' => 'admin','as' => 'admin.'], function(){
 	Route::post('clientes/store', ['as' => 'clientes.store', 'uses'=> 'ClientesController@store'] );
 	Route::post('clientes/update/{id}', ['as' => 'clientes.update', 'uses'=> 'ClientesController@update'] );
 	Route::get('clientes/destroy/{id}', ['as' => 'clientes.destroy', 'uses'=> 'ClientesController@destroy'] );
+	
+	Route::get('orders', ['as' => 'orders.index', 'uses'=>'OrdersController@index']);
+	Route::get('orders/edit/{id}', ['as' => 'orders.edit', 'uses'=>'OrdersController@edit']);
+	Route::post('orders/update/{id}', ['as' => 'orders.update', 'uses'=>'OrdersController@update']);
 });

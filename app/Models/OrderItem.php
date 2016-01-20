@@ -12,7 +12,7 @@ class OrderItem extends Model implements Transformable
 
     protected $fillable = [
         'produto_id',
-        'cliente_id',
+        'order_id',
         'preco',
         'qtd'
     ];

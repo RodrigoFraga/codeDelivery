@@ -1,4 +1,12 @@
+<div class="form-group">
+	{!! Form::label('Name', 'Nome') !!}
+	{!! Form::text('user[name]', null, ['class' => 'form-control']) !!}
+</div>
 
+<div class="form-group">
+	{!! Form::label('Email', 'E-mail') !!}
+	{!! Form::text('user[email]', null, ['class' => 'form-control']) !!}
+</div>
 
 <div class="form-group">
 	{!! Form::label('Telefone', 'Telefone') !!}
