@@ -4,14 +4,14 @@ namespace CodeDelivery\Repositories;
 
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
-use CodeDelivery\Repositories\ProdutoRepository;
-use CodeDelivery\Models\Produto;
+use CodeDelivery\Repositories\CupomRepository;
+use CodeDelivery\Models\Cupom;
 
 /**
- * Class ProdutoRepositoryEloquent
+ * Class CupomRepositoryEloquent
  * @package namespace CodeDelivery\Repositories;
  */
-class ProdutoRepositoryEloquent extends BaseRepository implements ProdutoRepository
+class CupomRepositoryEloquent extends BaseRepository implements CupomRepository
 {
     /**
      * Specify Model class name
@@ -20,12 +20,7 @@ class ProdutoRepositoryEloquent extends BaseRepository implements ProdutoReposit
      */
     public function model()
     {
-        return Produto::class;
-    }
-
-    public function lists()
-    {
-        return $this->model->get(['id', 'nome', 'preco']);
+        return Cupom::class;
     }
 
     /**
